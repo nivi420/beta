@@ -46,9 +46,11 @@ custMaster.custStatus != 'ACTIVE'
              
 }
 
+echo "<p class='mainTitle'> <br>Pending Customer Approvals<br><br><p>"; 
+
 $i = 1; //counter for the checkboxes so that each has a unique name
-echo "<form action='approval.php' method='post'>"; //form started here
-echo "<table border='1'>
+echo "<form action='../../approval.php' method='post'>"; //form started here
+echo "<table id='newCust' border='1'>
 <tr>
 <th>Customer Id</th>
 <th>Cust Name</th>
@@ -137,3 +139,25 @@ function debug_to_console( $data ) {
 */
 
 ?> 
+
+<html> 
+
+    <head> 
+        <style type="text/css"> 
+            th, td {
+    
+                border: 2px solid gray;
+
+            }
+            .mainTitle{
+                text-align: center;
+                color: rebeccapurple;
+                font-size: 20px; 
+                
+            }
+ 
+        </style>
+    </head>
+
+
+</html>
